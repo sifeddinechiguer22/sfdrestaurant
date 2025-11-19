@@ -1,0 +1,91 @@
+.reservation-section {
+  padding: 100px 2rem 2rem;
+}
+
+.reservation-section h2 {
+  text-align: center;
+  color: #c17e3a;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.reservation-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reservation-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c17e3a;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.reservation-info {
+  background: #f8f3e9;
+  padding: 2rem;
+  border-radius: 15px;
+  border: 2px solid #c17e3a;
+}
+
+.reservation-info h3 {
+  color: #8b4513;
+  margin-bottom: 1.5rem;
+}
+
+.reservation-info ul {
+  list-style: none;
+}
+
+.reservation-info li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.reservation-info li:before {
+  content: "•";
+  color: #c17e3a;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
