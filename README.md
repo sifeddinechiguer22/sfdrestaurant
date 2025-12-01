@@ -1,74 +1,227 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🕌 Restaurant Marocain SFD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌟 Description
 
-## Available Scripts
+SFD – Saveurs & Fines Dégustations est une application web moderne développée avec **React.js**.
+Elle présente un restaurant marocain authentique et permet aux utilisateurs de :
 
-In the project directory, you can run:
+* Découvrir le menu gastronomique
+* Obtenir les informations de localisation
+* Connaître l’histoire et la mission du restaurant
+* Réserver une table directement depuis le site
 
-### `npm start`
+L’application est **responsive** et optimisée pour desktop et mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚙️ Technologies utilisées
 
-### `npm test`
+* **Frontend :** React.js, HTML5, CSS3, JavaScript ES6+
+* **Outils :** VS Code, Git/GitHub
+* **Optimisations :** React.lazy(), Suspense, code splitting
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧱 Structure du projet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+sfd-restaurant/
+│
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js / Navbar.css
+│   │   ├── Hero.js / Hero.css
+│   │   ├── Menu.js / Menu.css
+│   │   ├── About.js / About.css
+│   │   ├── Location.js / Location.css
+│   │   ├── Reservation.js / Reservation.css
+│   │
+│   ├── App.js / App.css
+│   ├── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Chaque composant React possède son fichier CSS dédié pour isoler et organiser les styles.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧩 Fonctionnalités
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Navbar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Navigation entre les sections : Accueil, Menu, Localisation, Informations, Réserver
+* Menu mobile toggle (hamburger)
+* Indication visuelle de la section active
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Hero
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Bannière d’accueil immersive
+* Sous-titre et description
+* Boutons d’action : Réserver et Voir le menu
 
-## Learn More
+### 3. Menu Gastronomique
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Entrées, Plats principaux, Desserts & Boissons
+* Affichage du nom, description et prix de chaque plat
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 4. Localisation
 
-### Code Splitting
+* Adresse complète
+* Horaires d’ouverture
+* Contact : téléphone, email
+* Carte (placeholder pour Google Map)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 5. About (Informations)
 
-### Analyzing the Bundle Size
+* Histoire du restaurant
+* Mission et valeurs
+* Profil du chef avec citation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 6. Reservation
 
-### Making a Progressive Web App
+* Formulaire complet : nom, email, téléphone, date, heure, nombre de personnes, message supplémentaire
+* Validation des champs et message de confirmation après soumission
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🚀 Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Cloner le projet :**
 
-### Deployment
+```bash
+git clone https://github.com/votre-utilisateur/sfd-restaurant.git
+cd sfd-restaurant
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Installer les dépendances :**
 
-### `npm run build` fails to minify
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# sfdrestaurant
->>>>>>> 61d6f189edc3dac91035d3f2320be3df57b8578d
+3. **Démarrer le projet :**
+
+```bash
+npm start
+```
+
+Le projet sera disponible sur `http://localhost:3000`.
+
+---
+
+## 🔧 Personnalisation
+
+* Modifier les textes et images dans les composants `Hero.js`, `About.js`, `Menu.js` et `Location.js`
+* Ajouter ou retirer des plats dans le fichier `Menu.js`
+* Adapter le formulaire de réservation selon vos besoins
+
+---
+
+## 📌 Limitations actuelles
+
+* Pas de backend réel : les réservations ne sont pas stockées dans une base de données
+* Carte non interactive (Google Maps non intégrée)
+* Pas de système d’authentification pour les administrateurs
+
+---
+
+## 🌿 Améliorations futures
+
+* Intégration d’un backend (Node.js, PHP ou Laravel) pour gérer les réservations
+* Authentification admin pour gérer le menu et les réservations
+* Ajout d’une galerie photos et d’avis clients
+* Intégration de Google Maps interactive
+
+---
+
+## 📄 Rapport du projet
+
+### 1. Introduction
+
+Le projet **SFD – Saveurs & Fines Dégustations** est une application web développée avec React.js, représentant un restaurant marocain authentique.
+L’objectif principal est de fournir une **interface moderne, interactive et responsive** pour permettre aux clients de découvrir le menu, localiser le restaurant, connaître son histoire et effectuer des réservations en ligne.
+
+### 2. Objectifs du projet
+
+* Créer un site web attractif et immersif pour un restaurant marocain
+* Permettre aux clients de visualiser le menu complet avec prix et descriptions
+* Fournir les informations de contact et la localisation du restaurant
+* Offrir un formulaire de réservation simple et fonctionnel
+* Mettre en avant l’histoire, la mission et le chef du restaurant
+
+### 3. Technologies utilisées
+
+* Frontend : React.js, HTML5, CSS3, JavaScript ES6+
+* Optimisation : React.lazy(), Suspense, code splitting
+* Outils : VS Code, Git/GitHub
+* Design : Responsive, mobile-first, UI moderne et claire
+
+### 4. Structure du projet
+
+```
+sfd-restaurant/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js / Navbar.css
+│   │   ├── Hero.js / Hero.css
+│   │   ├── Menu.js / Menu.css
+│   │   ├── About.js / About.css
+│   │   ├── Location.js / Location.css
+│   │   ├── Reservation.js / Reservation.css
+│   ├── App.js / App.css
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
+
+### 5. Description des composants
+
+* **Navbar :** navigation entre sections, menu mobile, indication de la page active
+* **Hero :** bannière d’accueil, description du restaurant, boutons d’action
+* **Menu :** affichage des plats par catégories avec nom, description et prix
+* **About :** histoire, mission et profil du chef
+* **Location :** adresse, contact, horaires, carte (placeholder)
+* **Reservation :** formulaire complet avec validation et message de confirmation
+
+### 6. Fonctionnalités principales
+
+* Navigation fluide entre sections
+* Affichage dynamique du menu
+* Formulaire de réservation avec validation et feedback utilisateur
+* Responsive design pour desktop, tablette et mobile
+* Chargement optimisé grâce à React.lazy() et Suspense
+
+### 7. Limites et améliorations possibles
+
+* Pas de backend réel (les réservations ne sont pas stockées)
+* Carte non interactive
+* Pas d’authentification pour l’administration
+
+Améliorations possibles :
+
+* Intégration d’un backend pour gérer les réservations
+* Authentification admin
+* Galerie photos et avis clients
+* Carte interactive avec Google Maps
+
+### 8. Conclusion
+
+Ce projet démontre la maîtrise de **React.js**, la structuration des composants, la gestion de l’état et des props, ainsi que la création d’une interface **moderne, responsive et immersive** pour un site de restaurant marocain.
+
+---
+
+## 📝 Licence
+
+Ce projet est **open-source** et peut être utilisé à des fins personnelles ou pédagogiques.
